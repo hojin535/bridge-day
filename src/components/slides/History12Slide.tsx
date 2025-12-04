@@ -75,7 +75,7 @@ export default function History12Slide() {
                     <div className="w-full h-[250px] bg-slate-700/50 rounded-lg flex items-center justify-center mb-4 p-2">
                       <div className="flex gap-6 items-center justify-center w-full h-full">
                         <div className="relative w-[300px] h-[300px]">
-                            <Image src="/assets/iot/IoT2.jpg" alt="IoT Project2" fill className="object-contain rounded-lg" />
+                            <Image src="/assets/IoT/IoT.jpg" alt="IoT Project" fill className="object-contain rounded-lg" />
                         </div>
                         <iframe 
                             src="https://github.com/user-attachments/assets/9f0be10f-5396-457a-8a5c-ddc098e021f8" 
