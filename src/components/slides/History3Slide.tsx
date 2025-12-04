@@ -4,7 +4,7 @@ import React from "react";
 import Slide from "../Slide";
 import { motion } from "framer-motion";
 import Carousel from "../ui/Carousel";
-
+import Image from "next/image"
 export default function History3Slide() {
   return (
     <Slide>
@@ -16,7 +16,7 @@ export default function History3Slide() {
           className="mb-12 text-center"
         >
           <h2 className="text-4xl font-bold mb-2 text-gradient">History: 3학년</h2>
-          <p className="text-2xl text-slate-300 italic">"경험의 확장 - 해커톤, 외주"</p>
+          <p className="text-2xl text-slate-300 italic">"여러 경험 - 해커톤, 외주, 동아리"</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -49,7 +49,6 @@ export default function History3Slide() {
             transition={{ delay: 0.6 }}
             className="glass-panel p-6"
           >
-            <h3 className="text-xl font-bold text-purple-400 mb-4">Academic Achievement (학술 성과)</h3>
             <Carousel 
               slides={[
                 // Slide 0: AWS-ART Hackathon
@@ -58,11 +57,18 @@ export default function History3Slide() {
                     <span className="font-semibold block text-lg">AWS-ART 해커톤</span>
                     <span className="text-sm text-slate-400 block mb-2">타 학교 교류 &rarr; '자비스' 프로젝트로 고도화</span>
                   </div>
-                  <div className="w-full h-[200px] bg-slate-700/50 rounded-lg flex items-center justify-center mb-2">
-                  <div>
-                    <iframe src="https://drive.google.com/file/d/1bxMbK92L7m2OuE3SEWryrmBa2RFgsTUo/view?usp=sharing"/>
-                  </div>
-                    <p className="text-slate-500 text-sm">[이미지] 해커톤 활동 / 자비스 프로젝트</p>
+                  <div className="w-full h-[200px] bg-slate-700/50 rounded-lg mb-2 overflow-hidden">
+                    <div className="flex w-full h-full">
+                      <div className="w-1/2 h-full relative">
+                        <iframe 
+                          src="https://drive.google.com/file/d/1bxMbK92L7m2OuE3SEWryrmBa2RFgsTUo/preview" 
+                          className="w-full h-full border-0"
+                        ></iframe>
+                      </div>
+                      <div className="w-1/2 h-full relative">
+                        <Image src="/assets/ART-AWS/ART-AWS.jpeg" alt="자비스" fill className="object-contain" />
+                      </div>
+                    </div>
                   </div>
                 </div>,
 
