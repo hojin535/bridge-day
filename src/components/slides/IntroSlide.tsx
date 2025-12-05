@@ -56,10 +56,10 @@ export default function IntroSlide() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
         >
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-4">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
             Bridge Day
           </h1>
-          <h2 className="text-3xl md:text-5xl font-light text-slate-300">
+          <h2 className="text-2xl md:text-4xl font-light text-slate-300">
             <span className="text-gradient font-semibold">4년간의 발자취</span>
           </h2>
         </motion.div>
@@ -90,7 +90,8 @@ export default function IntroSlide() {
               <div className="space-y-2 text-xl">
                 <p>Web Front-end</p>
                 <p className="mt-4">Contact: hojin5353@gmail.com<br/>
-                Phone: 010-5851-2831</p>
+                Phone: 010-5851-2831<br/>
+                GitHub: <a href="https://github.com/hojin535" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">hojin535</a></p>
               </div>
 
               <h4 className="text-2xl font-bold text-orange-400 mt-8 mb-4">Certifications</h4>
@@ -113,6 +114,11 @@ export default function IntroSlide() {
                 <li>🏆 2023 캡스톤 디자인 금상 (가보자)</li>
                 <li>🥈 2024 캡스톤 디자인 은상 (NetCustomaster)</li>
                 <li>🥉 2025 캡스톤 디자인 동상 (버슬버스)</li>
+              </ul>
+
+              <h4 className="text-2xl font-bold text-pink-400 mt-8 mb-4">Activity</h4>
+              <ul className="space-y-3 text-xl">
+                <li> DND 13기 (IT연합 동아리)</li>
               </ul>
             </div>
           </div>

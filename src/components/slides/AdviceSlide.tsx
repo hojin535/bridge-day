@@ -14,8 +14,8 @@ export default function AdviceSlide() {
           transition={{ delay: 0.2 }}
           className="mb-16"
         >
-          <h2 className="text-6xl md:text-8xl font-bold mb-4 text-gradient">Advice</h2>
-          <p className="text-3xl md:text-5xl text-slate-300">"후배님들에게 전하고 싶은 이야기"</p>
+          <h2 className="text-5xl md:text-7xl font-bold mb-4 text-gradient">Advice</h2>
+          <p className="text-2xl md:text-4xl text-slate-300 italic">"후배님들에게 전하고 싶은 이야기"</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
@@ -45,7 +45,7 @@ export default function AdviceSlide() {
             </div>
             <h3 className="text-3xl font-bold text-purple-400 mb-6">🚀 도전하기</h3>
             <ul className="space-y-4 text-xl text-slate-300">
-              <li>"준비된 때"는 없습니다. 부족해 보여도 프로젝트,해커톤등 다양한 활동에 지원하기</li>
+              <li>"준비된 때"는 없다. 부족해 보여도 프로젝트, 해커톤등 다양한 활동에 지원하기</li>
             </ul>
           </motion.div>
         </div>

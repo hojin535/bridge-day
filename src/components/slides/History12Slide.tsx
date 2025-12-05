@@ -8,19 +8,17 @@ import Carousel from "../ui/Carousel";
 export default function History12Slide() {
   return (
     <Slide>
-      <div className="w-full max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 h-[85%]">
-
+      <div className="w-full max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 h-[85%]grid-rows-[150px_1fr]">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <h2 className="text-6xl md:text-8xl font-bold mb-4 text-gradient">History: 1~2학년</h2>
-            <p className="text-3xl md:text-5xl text-slate-300 italic">기초를 다지고, 프론트엔드 개발의 흥미를 찾다</p>
+            <h2 className="text-5xl md:text-7xl font-bold mb-4 text-gradient">History: 1~2학년</h2>
+            <p className="text-2xl md:text-4xl text-slate-300 italic">프론트엔드 개발의 흥미를 찾다</p>
           </motion.div>
 
           <div className="hidden md:block" />
-
           <div className="space-y-6">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -50,6 +48,7 @@ export default function History12Slide() {
               <div className="mb-6">
                 <h4 className="font-semibold text-2xl mb-1">IoT수업 팀 프로젝트</h4>
                 <p className="text-lg text-slate-400">스마트 창문 / FE 웹, 센서 로직 개발</p>
+                <li className="text-lg text-slate-400 ml-6">센서, 날씨 예보등을 통한 자동 창문 제어 </li>
               </div>
 
               <div>
@@ -72,13 +71,13 @@ export default function History12Slide() {
                   // Slide 0: IoT Project - 이미지 2개
                   <div key="iot-1" className="flex flex-col h-full w-full p-4">
                     <div className="mb-4">
-                      <span className="font-semibold block text-lg text-white">IoT 수업 프로젝트(스마트 창문)</span>
+                      <h4 className="font-semibold text-[1.5rem] text-white">IoT 수업 프로젝트(스마트 창문)</h4>
                     </div>
                     <div className="flex gap-4 w-full justify-center items-center flex-1">
-                      <div className="relative w-[350px] h-[350px]">
+                      <div className="relative w-[500px] h-[500px]">
                         <Image src="/assets/IoT/IoT.jpg" alt="IoT Project" className="object-contain rounded-lg" fill />
                       </div>
-                      <div className="relative w-[350px] h-[350px]">
+                      <div className="relative w-[500px] h-[500px]">
                         <Image src="/assets/IoT/up.jpg" alt="IoT Project2" className="object-contain rounded-lg rotate-90" fill />
                       </div>
                     </div>
@@ -86,7 +85,7 @@ export default function History12Slide() {
                   // Slide 1: IoT Project - 코드 화면
                   <div key="iot-2" className="flex flex-col h-full w-full p-4">
                     <div className="mb-4">
-                      <span className="font-semibold block text-lg text-white">IoT 수업 프로젝트(스마트 창문)</span>
+                      <h4 className="font-semibold text-[1.5rem] text-white">IoT 수업 프로젝트(스마트 창문)</h4>
                     </div>
                     <div className="flex justify-center items-center flex-1">
                       <div className="relative w-[650px] h-[450px]">
@@ -97,12 +96,12 @@ export default function History12Slide() {
                   // Slide 2: IoT Project - 영상
                   <div key="iot-3" className="flex flex-col h-full w-full p-4">
                     <div className="mb-4">
-                      <span className="font-semibold block text-lg text-white">IoT 수업 프로젝트(스마트 창문)</span>
+                      <h4 className="font-semibold text-[1.5rem] text-white">IoT 수업 프로젝트(스마트 창문)</h4>
                     </div>
                     <div className="flex justify-center items-center flex-1">
                       <iframe 
-                        width="750"
-                        height="420"
+                        width="800"
+                        height="450"
                         src="https://github.com/user-attachments/assets/9f0be10f-5396-457a-8a5c-ddc098e021f8" 
                         className="rounded-lg border-0"
                         allow="autoplay"

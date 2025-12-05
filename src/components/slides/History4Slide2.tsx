@@ -9,14 +9,14 @@ import Image from "next/image";
 export default function History4Slide2() {
   return (
     <Slide>
-      <div className="w-full max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 h-[85%]">
+      <div className="w-full max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 h-[85%] grid-rows-[150px_1fr]">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
         >
-          <h2 className="text-6xl md:text-8xl font-bold mb-4 text-gradient">History: 4학년</h2>
-          <p className="text-3xl md:text-5xl text-slate-300 italic">협업 경험</p>
+          <h2 className="text-5xl md:text-7xl font-bold mb-4 text-gradient">History: 4학년</h2>
+          <p className="text-2xl md:text-4xl text-slate-300 italic">협업 경험</p>
         </motion.div>
 
         <div className="hidden md:block" />
@@ -77,20 +77,25 @@ export default function History4Slide2() {
           >
             <Carousel 
               slides={[
-                // Slide 0: DND 활동
-                <div key="dnd" className="flex flex-col h-full w-full p-4">
+                // Slide 0: Runky 로고
+                <div key="runky-logo" className="flex flex-col h-full w-full p-4">
+                  <div className="mb-4">
+                    <span className="font-semibold block text-lg text-white text-[1.5rem]">Runky</span>
+                    <span className="text-sm text-slate-400 block text-[1.25rem]">러닝 크루를 위한 소셜 러닝 플랫폼</span>
+                  </div>
                   <div className="flex items-center justify-center flex-1">
-                      <Image src="/assets/Runky/첫화면.png" alt="Runky" width={600} height={500}/>
+                    {/* <iframe src="https://indigo-result-179765.framer.app/#contact" width="800" height="450"></iframe> */}
+                    <Image src="/assets/Runky/첫화면.png" alt="Runky" width={800} height={600}/>
                   </div>
                 </div>,
-                // Slide 1: Runky 프로젝트
-                <div key="runky" className="flex flex-col h-full w-full p-4">
+                // Slide 1: Runky 시연 영상
+                <div key="runky-demo" className="flex flex-col h-full w-full p-4">
                   <div className="mb-4">
-                    <span className="font-semibold block text-lg text-white">Runky 프로젝트</span>
-                    <span className="text-sm text-slate-400 block">러닝 크루를 위한 소셜 러닝 플랫폼</span>
+                    <span className="font-semibold block text-lg text-white text-[1.5rem]">Runky 시연 영상</span>
+                    <span className="text-sm text-slate-400 block text-[1.25rem]">주요 기능 데모</span>
                   </div>
                   <div className="flex items-center justify-center flex-1">
-               <iframe src="https://drive.google.com/file/d/1-_ctNxkW2BSrPAs_JAfpc-Vf_QK8SgSC/preview" width="640" height="480"></iframe>
+                    <iframe src="https://drive.google.com/file/d/1-_ctNxkW2BSrPAs_JAfpc-Vf_QK8SgSC/preview" width="640" height="480"></iframe>
                   </div>
                 </div>,
               ]} 
