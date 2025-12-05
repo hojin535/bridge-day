@@ -4,6 +4,7 @@ import React from "react";
 import Slide from "../Slide";
 import { motion } from "framer-motion";
 import Carousel from "../ui/Carousel";
+import Image from "next/image";
 
 export default function History4Slide2() {
   return (
@@ -15,7 +16,7 @@ export default function History4Slide2() {
           transition={{ delay: 0.2 }}
         >
           <h2 className="text-6xl md:text-8xl font-bold mb-4 text-gradient">History: 4학년</h2>
-          <p className="text-3xl md:text-5xl text-slate-300 italic">서비스 배포 경험</p>
+          <p className="text-3xl md:text-5xl text-slate-300 italic">협업 경험</p>
         </motion.div>
 
         <div className="hidden md:block" />
@@ -78,14 +79,8 @@ export default function History4Slide2() {
               slides={[
                 // Slide 0: DND 활동
                 <div key="dnd" className="flex flex-col h-full w-full p-4">
-                  <div className="mb-4">
-                    <span className="font-semibold block text-lg text-white">DND 개발 연합 동아리</span>
-                    <span className="text-sm text-slate-400 block">8주 프로젝트</span>
-                  </div>
                   <div className="flex items-center justify-center flex-1">
-                    <div className="w-full h-64 bg-slate-700 rounded-xl border border-slate-600 flex items-center justify-center text-slate-400">
-                      [이미지] DND 활동 단체 사진
-                    </div>
+                      <Image src="/assets/Runky/첫화면.png" alt="Runky" width={600} height={500}/>
                   </div>
                 </div>,
                 // Slide 1: Runky 프로젝트
@@ -95,9 +90,7 @@ export default function History4Slide2() {
                     <span className="text-sm text-slate-400 block">러닝 크루를 위한 소셜 러닝 플랫폼</span>
                   </div>
                   <div className="flex items-center justify-center flex-1">
-                    <div className="w-full h-64 bg-slate-700 rounded-xl border border-slate-600 flex items-center justify-center text-slate-400">
-                      [이미지] Runky 최종 결과물 시연
-                    </div>
+               <iframe src="https://drive.google.com/file/d/1-_ctNxkW2BSrPAs_JAfpc-Vf_QK8SgSC/preview" width="640" height="480"></iframe>
                   </div>
                 </div>,
               ]} 
