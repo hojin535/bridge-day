@@ -8,12 +8,11 @@ import Image from "next/image"
 export default function History3Slide() {
   return (
     <Slide>
-      <div className="w-full max-w-[90%] mx-5 grid grid-cols-1 md:grid-cols-2 gap-2 h-full">
+      <div className="w-full max-w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 h-[85%]">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2 }}
-          className="h-[100px]"
         >
           <h2 className="text-6xl md:text-8xl font-bold mb-4 text-gradient">History: 3학년</h2>
           <p className="text-3xl md:text-5xl text-slate-300 italic">경험 확장 - 해커톤, 동아리, 캡스톤</p>
@@ -39,18 +38,18 @@ export default function History3Slide() {
               </li>
               <li>
                 <span className="font-semibold block text-2xl mb-1">교내 활동</span>
-                <span className="text-lg text-slate-400">원정 푸드 홈쇼핑, UFO (축제 주문 서비스)</span>
+                <span className="text-lg text-slate-400">원정 푸드 쇼핑몰, UFO (축제 주문 서비스)</span>
               </li>
             </ul>
           </motion.div>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 h-full">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5 }}
-            className="w-full h-full py-6 px-2 bg-slate-800 rounded-xl border border-slate-700 flex flex-col items-center justify-center text-slate-500 overflow-hidden "
+            className="w-full h-full py-6 px-2 bg-slate-800 rounded-xl border border-slate-700 flex flex-col items-center justify-center text-slate-500 overflow-hidden"
           >
             <Carousel 
               slides={[
@@ -58,33 +57,39 @@ export default function History3Slide() {
                 <div key="aws-art" className="flex flex-col h-full w-full p-4">
                   <div className="mb-4">
                     <span className="font-semibold block text-lg text-white">AWS-ART 해커톤</span>
-                    <span className="text-sm text-slate-400 block mb-2">Javis</span>
+                    <span className="text-sm text-slate-400 block">Javis</span>
                   </div>
-                  <div className="flex flex-col items-center w-full gap-4 h-[10px]">
+                  <div className="flex flex-col items-center justify-center gap-4 flex-1">
                     <div className="w-full flex justify-center">
-                       <iframe src="https://drive.google.com/file/d/1bxMbK92L7m2OuE3SEWryrmBa2RFgsTUo/preview" className="w-[500px] h-[250px] rounded-lg border-0"></iframe>
+                      <iframe src="https://drive.google.com/file/d/1bxMbK92L7m2OuE3SEWryrmBa2RFgsTUo/preview" className="w-[550px] h-[300px] rounded-lg border-0"></iframe>
                     </div>
-                    <div className="relative w-[300px] h-[150px]">
-                      <Image src="/assets/ART-AWS/ART-AWS.jpeg" alt="그룹사진" width={300} height={150} className="object-contain rounded-lg" />
+                    <div className="relative w-[350px] h-[180px]">
+                      <Image src="/assets/ART-AWS/ART-AWS.jpeg" alt="그룹사진" fill className="object-contain rounded-lg" />
                     </div>
                   </div>
                 </div>,
 
                 // Slide 1: Capstone Design
                 <div key="capstone" className="flex flex-col h-full w-full p-4">
-                  <div>
+                  <div className="mb-4">
                     <span className="font-semibold block text-lg text-white">🥈 캡스톤 디자인 은상</span>
-                    <span className="text-sm text-slate-400 block mb-2">NetCustomaster</span>
+                    <span className="text-sm text-slate-400 block">NetCustomaster</span>
                   </div>
-                  <div className="flex flex-col items-center justify-center flex-1">
+                  <div className="flex flex-col items-center justify-center gap-3 flex-1">
                     {/* 첫줄: 실물, 홈 사진 */}
-                    <div className="flex flex-row justify-center gap-2">
-                      <Image src="/assets/NetCustomaster/실물.png" alt="그룹사진" width={250} height={80} className="object-contain rounded-lg" />
-                      <Image src="/assets/NetCustomaster/홈.png" alt="그룹사진" width={300} height={150} className="object-contain rounded-lg" />
+                    <div className="flex flex-row justify-center gap-3">
+                      <div className="relative w-[280px] h-[200px]">
+                        <Image src="/assets/NetCustomaster/실물.png" alt="실물" fill className="object-contain rounded-lg" />
+                      </div>
+                      <div className="relative w-[320px] h-[200px]">
+                        <Image src="/assets/NetCustomaster/홈.png" alt="홈" fill className="object-contain rounded-lg" />
+                      </div>
                     </div>
                     {/* 둘째줄: 설정 사진 */}
                     <div className="flex justify-center">
-                      <Image src="/assets/NetCustomaster/설정.png" alt="그룹사진" width={300} height={150} className="object-contain rounded-lg" />
+                      <div className="relative w-[320px] h-[180px]">
+                        <Image src="/assets/NetCustomaster/설정.png" alt="설정" fill className="object-contain rounded-lg" />
+                      </div>
                     </div>
                   </div>
                 </div>,

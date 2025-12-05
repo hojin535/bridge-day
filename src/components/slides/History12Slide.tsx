@@ -69,36 +69,44 @@ export default function History12Slide() {
             >
               <Carousel 
                 slides={[
-                  // Slide 0: IoT Project (Placeholder)
-                  <div key="iot" className="flex flex-col items-center justify-center h-full w-full p-4">
-                    <span className="font-semibold block text-lg text-white">IoT 수업 프로젝트(스마트 창문)</span>
-                    <div className="flex gap-4 w-full justify-center items-center">
-                        <div className="relative w-[400px] h-[400px]">
-                            <Image src="/assets/IoT/IoT.jpg" alt="IoT Project" className="object-contain rounded-lg" fill />
-                        </div>
-                        <div className="relative w-[400px] h-[400px]">
-                            <Image src="/assets/IoT/up.jpg" alt="IoT Project2" className="object-contain rounded-lg rotate-90" fill />
-                        </div>
+                  // Slide 0: IoT Project - 이미지 2개
+                  <div key="iot-1" className="flex flex-col h-full w-full p-4">
+                    <div className="mb-4">
+                      <span className="font-semibold block text-lg text-white">IoT 수업 프로젝트(스마트 창문)</span>
+                    </div>
+                    <div className="flex gap-4 w-full justify-center items-center flex-1">
+                      <div className="relative w-[350px] h-[350px]">
+                        <Image src="/assets/IoT/IoT.jpg" alt="IoT Project" className="object-contain rounded-lg" fill />
+                      </div>
+                      <div className="relative w-[350px] h-[350px]">
+                        <Image src="/assets/IoT/up.jpg" alt="IoT Project2" className="object-contain rounded-lg rotate-90" fill />
+                      </div>
                     </div>
                   </div>,
-                  <div key="iot" className="flex flex-col items-center justify-center h-full w-full p-4">
-                    <span className="font-semibold block text-lg text-white">IoT 수업 프로젝트(스마트 창문)</span>
-                        <div className="relative w-[700px] h-[500px]">
-                            <Image src="/assets/IoT/코드화면.png" alt="IoT Project" className="object-contain rounded-lg" fill />
-          
+                  // Slide 1: IoT Project - 코드 화면
+                  <div key="iot-2" className="flex flex-col h-full w-full p-4">
+                    <div className="mb-4">
+                      <span className="font-semibold block text-lg text-white">IoT 수업 프로젝트(스마트 창문)</span>
+                    </div>
+                    <div className="flex justify-center items-center flex-1">
+                      <div className="relative w-[650px] h-[450px]">
+                        <Image src="/assets/IoT/코드화면.png" alt="IoT Code" className="object-contain rounded-lg" fill />
+                      </div>
                     </div>
                   </div>,
-                  <div key="iot" className="flex flex-col items-center justify-center h-full w-full p-4">
-                    <span className="font-semibold block text-lg text-white">IoT 수업 프로젝트(스마트 창문)</span>
-
-                  <div className="w-full flex justify-center mb-2">
-                        <iframe 
-                            width="750"
-                            height="400"
-                            src="https://github.com/user-attachments/assets/9f0be10f-5396-457a-8a5c-ddc098e021f8" 
-                            className="rounded-lg border-0"
-                            allow="autoplay"
-                        />
+                  // Slide 2: IoT Project - 영상
+                  <div key="iot-3" className="flex flex-col h-full w-full p-4">
+                    <div className="mb-4">
+                      <span className="font-semibold block text-lg text-white">IoT 수업 프로젝트(스마트 창문)</span>
+                    </div>
+                    <div className="flex justify-center items-center flex-1">
+                      <iframe 
+                        width="750"
+                        height="420"
+                        src="https://github.com/user-attachments/assets/9f0be10f-5396-457a-8a5c-ddc098e021f8" 
+                        className="rounded-lg border-0"
+                        allow="autoplay"
+                      />
                     </div>
                   </div>,
                   // <div key="gaboja">
