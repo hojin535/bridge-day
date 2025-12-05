@@ -50,7 +50,7 @@ const TSIcon = () => (
 export default function IntroSlide() {
   return (
     <Slide>
-      <div className="text-center space-y-8 max-w-6xl mx-auto">
+      <div className="text-center space-y-8 max-w-[90%] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -89,7 +89,13 @@ export default function IntroSlide() {
               <h4 className="text-2xl font-bold text-blue-400 mb-4">Profile</h4>
               <div className="space-y-2 text-xl">
                 <p>Web Front-end</p>
-                <p className="mt-4">Contact: hojin5353@gmail.com</p>
+                <p className="mt-4">Contact: hojin5353@gmail.com<br/>
+                Phone: 010-5851-2831</p>
+              </div>
+
+              <h4 className="text-2xl font-bold text-orange-400 mt-8 mb-4">Certifications</h4>
+              <div className="space-y-2 text-xl">
+                <p>📜 정보처리기사</p>
               </div>
 
               <h4 className="text-2xl font-bold text-green-400 mt-8 mb-4">Tech Stack</h4>
@@ -105,8 +111,8 @@ export default function IntroSlide() {
               <h4 className="text-2xl font-bold text-purple-400 mb-4">Awards</h4>
               <ul className="space-y-3 text-xl">
                 <li>🏆 2023 캡스톤 디자인 금상 (가보자)</li>
-                <li>🥈 2024 캡스톤 디자인 은상 (버슬버스)</li>
-                <li>🥉 2025 캡스톤 디자인 동상 (NetCustomaster)</li>
+                <li>🥈 2024 캡스톤 디자인 은상 (NetCustomaster)</li>
+                <li>🥉 2025 캡스톤 디자인 동상 (버슬버스)</li>
               </ul>
             </div>
           </div>
